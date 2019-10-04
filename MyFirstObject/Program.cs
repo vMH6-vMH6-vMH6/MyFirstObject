@@ -12,15 +12,15 @@ namespace MyFirstObject
         {
 
             BankAccount myAccount = new BankAccount();
-            myAccount.Balance = 100;
-            myAccount.CustomerName = "Trevor";
+            myAccount.Balance = 5;
+            myAccount.CustomerName = "Matt";
 
             Console.WriteLine(" The account name is " + myAccount.CustomerName);
             Console.WriteLine("The amount of money i have is " + myAccount.Balance);
 
             float newDeposit;
             float newBalance;
-            Console.WriteLine(" Input your deposit ammount");
+            Console.WriteLine(" Input your transaction ammount");
             newDeposit = float.Parse(Console.ReadLine());
             newBalance = myAccount.NewBalance(newDeposit);
             Console.WriteLine(newBalance);
